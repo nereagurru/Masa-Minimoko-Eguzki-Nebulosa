@@ -9,29 +9,29 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-#Gasaren dentsitatea
+# Gasaren dentsitatea
 def dent_gas(r):
     return 1700*(r**-1.5)
 
-#Hautsaren dentsitatea
+# Hautsaren dentsitatea
 def dent_hauts(r):
     return np.where(r < 2.7, dent_gas(r)/240, dent_gas(r)/60)
  
 
-#Diskoaren tenperatura
+# Diskoaren tenperatura
 def tenp(r):
     return 280*(r**-0.5)
 
-#Planetak kokatzeko grafikan
+# Planetak kokatzeko grafikan
 letra = ['Merkurio', 'Artizarra', 'Lurra', 'Marte', 'Jupiter', 'Saturno',
          'Urano', 'Neptuno']
 dist_plan = np.array([0.39, 0.723, 1, 1.524, 5.203, 9.539, 19.18, 30.06])
 
-#Materiaren kondentsazioa
+# Materiaren kondentsazioa
 r_kon = 2.7
 
 
-#Grafikako datuak kalkulatu
+# Grafikako datuak kalkulatu
 r = np.linspace(0.35, 36, 1000)
 tenp_list = tenp(r)
 gas_list = dent_gas(r)
