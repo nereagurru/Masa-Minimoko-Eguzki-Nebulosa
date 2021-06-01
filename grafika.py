@@ -71,7 +71,8 @@ sigma = np.linspace(np.amin(hauts_list), np.amax(gas_list), 100)
 ax_ten.plot(np.full(100, r_kon), t, linestyle='--', color='grey')
 ax_ten.scatter(r_kon, tenp(r_kon))
 ax_ten.annotate('170 K', (r_kon, tenp(r_kon)), (1.1*r_kon, tenp(r_kon)))
-ax_den.plot(np.full(100, r_kon), sigma, linestyle='--', color='grey')
+ax_den.plot(np.full(100, r_kon), sigma, linestyle='--', color='grey', label=
+            'Izotza kondentsatu')
 ax_ten.plot(r, tenp_list)
 
 plt.show()
