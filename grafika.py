@@ -44,7 +44,7 @@ fig, (ax_den, ax_ten) = plt.subplots(nrows=2, ncols=1, sharex=True)
 
 
 # Grafikan textua jarri
-ax_den.set_title('Gainazal dentsitatea')
+ax_den.set_title('Gainazal-dentsitatea')
 ax_den.set_ylabel(r'$\Sigma \; (g\,cm^{-2})$')
 ax_den.set_yscale('log')
 ax_den.legend()
